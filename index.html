@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>你好，我是祁同庆</h1>
+            <br>
+            <h2>网络工程师</h2>
+            <br>
+            <!--<a href="assets/resume.pdf" target="_blank" class="btn-rounded-white">简历下载</a>-->
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <h2 class="heading">About Me</h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img class="portrait" src="assets/portrait.jpg" alt="protrait image">
+                </div>
+
+                <div class="col-md-8 vertical-center">
+                    <p>
+                        初学者，正在努力学习ing~
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+
+    <div id="education">
+        <h2 class="heading">教育经历</h2>
+
+        <!-- One Education Block -->
+        <div class="education-block">
+            <h3>许昌学院</h3>
+            <span class="education-date">2016 - 2020</span>
+            <h4>数字媒体技术专业（本科）</h4>
+            <p>
+                2016--2020
+            </p>
+        </div>
+        <!-- End of One Education Block -->
+
+
+    </div>
+    <!-- End #education -->
+    <div id="experience" class="background-alt">
+        <h2 class="heading">工作经历</h2>
+        <div id="experience-timeline">
+            <h3>网络工程师</h3>
+
+            <!-- One Experience Block -->
+            <div data-date="2021">
+                <h4><b>DHCP配置</b></h4>
+                <p style="text-align:left">
+                    <b>项目描述：</b>配置DHCP来自动给主机分配地址，三层交换机被配置成DHCP Server。需求是254个接入量不够，要扩充到每个VLAN1000个地址。
+                    <br>
+                    <b>负责部分：</b>使用无类域间路由，将掩码为24位的地址改成掩码为22位的地址。然后检查配置，执行测试，在PC上查看IP地址的分配情况。
+                    <br>
+                    <b>总结：</b>这里涉及到的两个知识点是VLSM（子网划分）、CIDR（无类域间路由）。对刚入行的新手来说是一个锻炼机会 ，理论与实践相结合才会有成长。
+                    <br>
+                </p>
+            </div>
+            <!-- End of One Experience Block -->
+
+            <!-- One Experience Block -->
+            <div data-date="2021">
+                <h4><b>长安大学学生公寓交换机项目</b></h4>
+                <p style="text-align:left">
+                    <b>项目描述：</b>配置DHCP来自动给主机分配地址，三层交换机被配置成DHCP Server。需求是254个接入量不够，要扩充到每个VLAN1000个地址。
+                    <br>
+                    <b>负责部分：</b>选择相同型号的交换机进行重新堆叠，堆叠成功后为每栋楼划分到相应的VLAN，Vlan1作为管理VLAN并配置Vlanif接口部署独立的管理网络。核心层配置作为网关，与出口路由器实现三层互联。最后在核心层配置缺省路由，在路由器上配置回程静态路由，实现网络的正常通信。
+                    <br>
+                    <b>总结：</b>通过此次的项目使我对交换机的堆叠更加清楚和明白，巩固了堆叠方面的知识，熟悉了交换机的堆叠过程（成员编号、优先级、堆叠互联口、链路聚合）。
+                    <br>
+                </p>
+            </div>
+            <!-- End of One Experience Block -->
+
+            <!-- One Experience Block -->
+            <div data-date="2021">
+                <h4><b>李宁西北总代理原路由器风扇故障</b></h4>
+                <p style="text-align:left">
+                    <b>项目描述：</b>工程割接，原路由器风扇故障，使用新设备替换，尽快恢复公司业务。
+                    <br>
+                    <b>负责部分：</b>首先对公司网络故障进行检查，了解网络拓扑结构。准备割接方案和回退方案并审核验证，在得到业主授权的情况下执行割接操作，到公司人员下班不使用网络时进行割接。如果5分钟之内不能恢复则换上公司原来使用的路由器，将公司网络恢复原状并做好测试工作；如果业务恢复正常，则做好测试工作。
+                    <br>
+                    <b>总结：</b>对割接前的准备和割接的过程有了更充分的认识。
+                    <br>
+                </p>
+            </div>
+            <!-- End of One Experience Block -->
+
+            <!-- One Experience Block -->
+            <div data-date="2021">
+                <h4><b>校园网络</b></h4>
+                <p style="text-align:left">
+                    <b>项目描述：</b>根据所学习的计算机组网的知识，使用全部所分配的路由器、交换机等网络设备，完成一个具备一定规模一定用途的组网建设，并写出工程报告
+                    <br>
+                    <b>负责部分：</b>技术方面负责参与讨论整体的组网规划，详细到IP分配，设备运用方式等，完成对设备的子网规划，防火墙（ACL）、端口ip、远程登录、用户管理、三层交换的配置，VPN、NAT的配置，路由器路由交换协议的配置，包括内部协议和外部协议，如OSPF，BGP。另外负责整个的人员分工和规划以及规划调整。
+                    <br>
+                    <b>总结：</b>成功建立一个基于本校现状的，实现学校主要的教学、科研、管理计算机联网。网络提供基础DNS
+                    解析、DHCP分配服务、FTP服务，HTTP服务（模拟校主页）。通过实现办公自动化，提高学校各级管理的效率和水平。
+                    <br>
+                </p>
+            </div>
+            <!-- End of One Experience Block -->
+
+            <!--
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat
+                    laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+                    libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+
+            -->
+        </div>
+
+    </div>
+    <!-- End #experience -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">网络拓扑</h2>
+        <div class="container">
+
+            <!-- One Project 2D Block -->
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="image" src="assets/thumbs/topo/image01-thumb.png" alt="assets/fulls/image01-full.jpg" />
+                </div>
+            </div>
+            <!-- End of One Project 2D Block -->
+
+
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="image" src="assets/thumbs/topo/image02-thumb.png"
+                        alt="assets/fulls/topo/image02-full.jpg" />
+                </div>
+                <!-- End .project-image -->
+            </div>
+            <!-- End .project -->
+
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="image" src="assets/thumbs/topo/image03-thumb.png"
+                        alt="assets/fulls/topo/image03-full.jpg" />
+                </div>
+                <!-- End .project-image -->
+            </div>
+            <!-- End .project -->
+
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">拓扑文件</h2>
+        <div class="container">
+
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img class="image" src="assets/thumbs/topo.png" alt="assets/topo/duidie.topo" />
+                </div>
+                <!-- End .project-image -->
+            </div>
+            <!-- End .project -->
+
+
+        </div>
+    </div>
+
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">其他兴趣爱好</h2>
+        <div class="container">
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">特效展示 GIF</h2>
+        <div class="container">
+
+            <!-- One Project Video Block -->
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/01.png" alt="assets/fulls/gif-full/01.gif" />
+                </div>
+            </div>
+            <!-- End of One Project Video Block -->
+
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/02.png" alt="assets/fulls/gif-full/02.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/03.png" alt="assets/fulls/gif-full/03gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/04.png" alt="assets/fulls/gif-full/04.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/05.png" alt="assets/fulls/gif-full/05.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/06.png" alt="assets/fulls/gif-full/06.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/07.png" alt="assets/fulls/gif-full/07.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/08.png" alt="assets/fulls/gif-full/08.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/09.png" alt="assets/fulls/gif-full/09.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/10.png" alt="assets/fulls/gif-full/10.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/11.png" alt="assets/fulls/gif-full/11.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/12.png" alt="assets/fulls/gif-full/12.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/13.png" alt="assets/fulls/gif-full/13.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/14.png" alt="assets/fulls/gif-full/14.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/15.png" alt="assets/fulls/gif-full/15.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/16.png" alt="assets/fulls/gif-full/16.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/17.png" alt="assets/fulls/gif-full/17.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/18.png" alt="assets/fulls/gif-full/18.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/19.png" alt="assets/fulls/gif-full/19.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/20.png" alt="assets/fulls/gif-full/20.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/21.png" alt="assets/fulls/gif-full/21.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/22.png" alt="assets/fulls/gif-full/22.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/23.png" alt="assets/fulls/gif-full/23.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/24.png" alt="assets/fulls/gif-full/24.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/25.png" alt="assets/fulls/gif-full/25.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/26.png" alt="assets/fulls/gif-full/26.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/27.png" alt="assets/fulls/gif-full/27.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/28.png" alt="assets/fulls/gif-full/28.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/29.png" alt="assets/fulls/gif-full/29.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/30.png" alt="assets/fulls/gif-full/30.gif" />
+                </div>
+            </div>
+
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/31.png" alt="assets/fulls/gif-full/31.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/32.png" alt="assets/fulls/gif-full/32.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/33.png" alt="assets/fulls/gif-full/33.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/34.png" alt="assets/fulls/gif-full/34.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/35.png" alt="assets/fulls/gif-full/35.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/36.png" alt="assets/fulls/gif-full/36.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/37.png" alt="assets/fulls/gif-full/37.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/38.png" alt="assets/fulls/gif-full/38.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/39.png" alt="assets/fulls/gif-full/39.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/40.png" alt="assets/fulls/gif-full/40.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/41.png" alt="assets/fulls/gif-full/41.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/42.png" alt="assets/fulls/gif-full/42.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/43.png" alt="assets/fulls/gif-full/43.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/44.png" alt="assets/fulls/gif-full/44.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/45.png" alt="assets/fulls/gif-full/45.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/46.png" alt="assets/fulls/gif-full/46.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/47.png" alt="assets/fulls/gif-full/47.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/48.png" alt="assets/fulls/gif-full/48.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/49.png" alt="assets/fulls/gif-full/49.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/50.png" alt="assets/fulls/gif-full/50.gif" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/51.png" alt="assets/fulls/gif-full/51.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/52.png" alt="assets/fulls/gif-full/52.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/53.png" alt="assets/fulls/gif-full/53.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/54.png" alt="assets/fulls/gif-full/54.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/55.png" alt="assets/fulls/gif-full/55.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/56.png" alt="assets/fulls/gif-full/56.gif" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-video">
+                    <img class="image" src="assets/thumbs/GIF/57.png" alt="assets/fulls/gif-full/57.gif" />
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">视频展示</h2>
+        <div class="container">
+
+            <!-- One Project 3DModel Block -->
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/01.png" alt="assets/fulls/mp4-full/01.mp4" />
+                </div>
+            </div>
+            <!-- End of One Project 3DModel Block -->
+
+
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/02.png" alt="assets/fulls/mp4-full/02.mp4" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/03.png" alt="assets/fulls/mp4-full/03.mp4" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/04.png" alt="assets/fulls/mp4-full/04.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/05.png" alt="assets/fulls/mp4-full/05.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/06.png" alt="assets/fulls/mp4-full/06.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/07.png" alt="assets/fulls/mp4-full/07.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/08.png" alt="assets/fulls/mp4-full/08.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/09.png" alt="assets/fulls/mp4-full/09.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/10.png" alt="assets/fulls/mp4-full/10.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/11.png" alt="assets/fulls/mp4-full/11.mp4" />
+                </div>
+            </div>
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/mp4/12.png" alt="assets/fulls/mp4-full/12.mp4" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">3D Models</h2>
+        <div class="container">
+
+           
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/model03-thumb.jpg" alt="assets/fulls/model03-full.glb" />
+                </div>
+            </div>
+            
+
+
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/model04-thumb.jpg" alt="assets/fulls/model04-full.glb" />
+                </div>
+            </div>
+
+            <div class="project shadow-large">
+                <div class="project-glb">
+                    <img class="image" src="assets/thumbs/model04-thumb.jpg" alt="assets/fulls/model04-full.glb" />
+                </div>
+            </div>
+
+            
+
+
+        </div>
+    </div>
+    
+    -->
+
+    <div id="projects" class="background-alt-nth">
+        <h2 class="heading">Unity3d Projects</h2>
+        <div class="container-game">
+
+            <!-- One Project Game Block -->
+            <div class="project-game shadow-large">
+                <div class="project-image">
+                     <img src="assets/thumbs/Underwater.png" />
+                    
+                </div>
+                <div class="project-info">
+                    <h3>Underwater world</h3>
+                    <p>
+                        这是一个水下世界 的 Demo.
+                    </p>
+                    <a href="https://space.bilibili.com/393236865" target="_blank">个人主页</a>
+                    <!--<a href="https://curryricegames.itch.io/flappybird-demo" target="_blank">View Project</a>-->
+                </div>
+            </div>
+
+
+            <!-- 
+            <div class="project-game shadow-large">
+                <div class="project-image">
+                    <img src="assets/thumbs/Counter-thumb.jpg" />
+                </div>                
+                <div class="project-info">
+                    <h3>Counter webgl demo</h3>
+                    <p>
+                        这是一个在itch.io上的Counter Webgl 的 Demo.
+                    </p>
+                    <a href="https://curryricegames.itch.io/countertest" target="_blank">View Project</a>
+                </div>            
+            </div>
+            
+            -->
+        </div>
+    </div>
+
+    <!-- Different media viewers -->
+
+    <!-- image viewer -->
+    <div class="overlay-viewer" id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image">
+    </div>
+    <!-- End of image viewer -->
+
+    <!-- video viewer -->
+    <div class="overlay-viewer" id="video-viewer">
+        <span class="close">&times;</span>
+        <video id="full-video" class="modal-content" controls autoplay loop src="#">
+            Your browser does not support HTML5 video element.
+        </video>
+    </div>
+    <!-- End of video viewer -->
+
+    <!-- glb viewer -->
+    <div class="overlay-viewer" id="glb-viewer">
+        <span class="close">&times;</span>
+        <model-viewer id="full-glb" class="glb-content" src="#" autoplay ar shadow-intensity="1" camera-controls
+            auto-rotate></model-viewer>
+    </div>
+    <!-- End of glb viewer -->
+
+
+    <!-- End #projects -->
+
+
+
+
+
+
+
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>华为 HCIE-Routing & Switching</li>
+            <li>普通话一级甲等</li>
+            <li>大学英语四级</li>
+
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>联系方式</h2>
+        <div id="contact-form">
+
+            <!-- One Social Icon Block -->
+            <article>
+                <i class="fa fa-envelope fa-fw"></i>
+                <span>2309863680@qq.com</span>
+            </article>
+            <!-- End of One Social Icon Block -->
+
+            <article>
+                <i class="fa fa-phone fa-fw"></i>
+                <span>18853421926</span>
+            </article>
+            <article>
+                <i class="fa fa-home fa-fw"></i>
+                <span>山东省济南市</span>
+            </article>
+            <article>
+                <i class="fa fa-weixin fa-fw"></i>
+                <span>Dec19-s</span>
+            </article>
+            <article>
+                <i class="fa fa-qq fa-fw"></i>
+                <span>2309863680</span>
+            </article>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2022</span> QiTongQing Portfolio
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://qq.com/" target="_blank"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://weixin.com/" target="_blank"><i class="fa fa-weixin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+
+
+
+
+
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
